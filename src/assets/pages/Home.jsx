@@ -10,76 +10,78 @@ function Home() {
                 <h1 className='text-[20pt] font-sora font-semibold'>Dashboard</h1>
                 <div className='flex flex-col xl:flex-row gap-[20px] mt-[20px]'>
                     <table id='tabelaPontos' className='grow-[2]'>
-                        <tr className='table_header'>
-                            <th>Posição</th>
-                            <th>Turmas competindo</th>
-                            <th>Pontuação</th>
-                        </tr>
-                        <tr>
-                            <td>0º</td>
-                            <td>Terceiro Desenvolvimento de Sistemas</td>
-                            <td>0 pontos</td>
-                        </tr>
-                        <tr>
-                            <td>0º</td>
-                            <td>Terceiro Desenvolvimento de Sistemas</td>
-                            <td>0 pontos</td>
-                        </tr>
-                        <tr>
-                            <td>0º</td>
-                            <td>Terceiro Desenvolvimento de Sistemas</td>
-                            <td>0 pontos</td>
-                        </tr>
-                        <tr>
-                            <td>0º</td>
-                            <td>Terceiro Desenvolvimento de Sistemas</td>
-                            <td>0 pontos</td>
-                        </tr>
-                        <tr>
-                            <td>0º</td>
-                            <td>Terceiro Desenvolvimento de Sistemas</td>
-                            <td>0 pontos</td>
-                        </tr>
-                        <tr>
-                            <td>0º</td>
-                            <td>Terceiro Desenvolvimento de Sistemas</td>
-                            <td>0 pontos</td>
-                        </tr>
-                        <tr>
-                            <td>0º</td>
-                            <td>Terceiro Desenvolvimento de Sistemas</td>
-                            <td>0 pontos</td>
-                        </tr>
-                        <tr>
-                            <td>0º</td>
-                            <td>Terceiro Desenvolvimento de Sistemas</td>
-                            <td>0 pontos</td>
-                        </tr>
-                        <tr>
-                            <td>0º</td>
-                            <td>Terceiro Desenvolvimento de Sistemas</td>
-                            <td>0 pontos</td>
-                        </tr>
-                        <tr>
-                            <td>0º</td>
-                            <td>Terceiro Desenvolvimento de Sistemas</td>
-                            <td>0 pontos</td>
-                        </tr>
-                        <tr>
-                            <td>0º</td>
-                            <td>Terceiro Desenvolvimento de Sistemas</td>
-                            <td>0 pontos</td>
-                        </tr>
-                        <tr>
-                            <td>0º</td>
-                            <td>Terceiro Desenvolvimento de Sistemas</td>
-                            <td>0 pontos</td>
-                        </tr>
-                        <tr>
-                            <td>0º</td>
-                            <td>Terceiro Desenvolvimento de Sistemas</td>
-                            <td>0 pontos</td>
-                        </tr>
+                        <tbody>
+                            <tr className='table_header'>
+                                <th>Posição</th>
+                                <th>Turmas competindo</th>
+                                <th>Pontuação</th>
+                            </tr>
+                            <tr>
+                                <td>0º</td>
+                                <td>Terceiro Desenvolvimento de Sistemas</td>
+                                <td>0 pontos</td>
+                            </tr>
+                            <tr>
+                                <td>0º</td>
+                                <td>Terceiro Desenvolvimento de Sistemas</td>
+                                <td>0 pontos</td>
+                            </tr>
+                            <tr>
+                                <td>0º</td>
+                                <td>Terceiro Desenvolvimento de Sistemas</td>
+                                <td>0 pontos</td>
+                            </tr>
+                            <tr>
+                                <td>0º</td>
+                                <td>Terceiro Desenvolvimento de Sistemas</td>
+                                <td>0 pontos</td>
+                            </tr>
+                            <tr>
+                                <td>0º</td>
+                                <td>Terceiro Desenvolvimento de Sistemas</td>
+                                <td>0 pontos</td>
+                            </tr>
+                            <tr>
+                                <td>0º</td>
+                                <td>Terceiro Desenvolvimento de Sistemas</td>
+                                <td>0 pontos</td>
+                            </tr>
+                            <tr>
+                                <td>0º</td>
+                                <td>Terceiro Desenvolvimento de Sistemas</td>
+                                <td>0 pontos</td>
+                            </tr>
+                            <tr>
+                                <td>0º</td>
+                                <td>Terceiro Desenvolvimento de Sistemas</td>
+                                <td>0 pontos</td>
+                            </tr>
+                            <tr>
+                                <td>0º</td>
+                                <td>Terceiro Desenvolvimento de Sistemas</td>
+                                <td>0 pontos</td>
+                            </tr>
+                            <tr>
+                                <td>0º</td>
+                                <td>Terceiro Desenvolvimento de Sistemas</td>
+                                <td>0 pontos</td>
+                            </tr>
+                            <tr>
+                                <td>0º</td>
+                                <td>Terceiro Desenvolvimento de Sistemas</td>
+                                <td>0 pontos</td>
+                            </tr>
+                            <tr>
+                                <td>0º</td>
+                                <td>Terceiro Desenvolvimento de Sistemas</td>
+                                <td>0 pontos</td>
+                            </tr>
+                            <tr>
+                                <td>0º</td>
+                                <td>Terceiro Desenvolvimento de Sistemas</td>
+                                <td>0 pontos</td>
+                            </tr>
+                        </tbody>
                     </table>
                     <div className='flex flex-col md:flex-row xl:flex-col grow-[0.5] xl:w-[20%] gap-[20px] w-auto'>
                         <div className='bg-white rounded-[10px] justify-center p-[25px] flex flex-col gap-[25px] border-light-gray border-[1px] w-[100%] xl:h-fit'>
