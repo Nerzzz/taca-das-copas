@@ -6,7 +6,30 @@ function Home() {
 
     return (
         <main className='px-[10px] md:px-[40px] my-[40px]'>
-            <section id="dashboard">
+            <section id='podio'>
+                <h1 className='text-[20pt] font-sora font-semibold'>Pódio</h1>
+                <div className='flex flex-row items-end justify-center gap-[20px] h-[200px]'>
+                    <div className='flex flex-col items-center gap-[20px]'>
+                        <h1>3º DS</h1>
+                        <div className='bg-linear-to-b from-orange-300 to-orange-400 p-[30px] flex flex-col justify-center'>
+                            <span className='text-white text-[24pt] font-sora font-extrabold'>3</span>
+                        </div>
+                    </div>
+                    <div className='flex flex-col items-center gap-[20px]'>
+                        <h1>3º DS</h1>
+                        <div className='bg-linear-to-b from-yellow-400 to-yellow-500 p-[30px] h-[100%] flex flex-col justify-center'>
+                            <span className='text-white text-[24pt] font-sora font-extrabold'>1</span>
+                        </div>
+                    </div>
+                    <div className='flex flex-col items-center gap-[20px]'>
+                        <h1>3º DS</h1>
+                        <div className='bg-linear-to-b from-gray-300 to-gray-400 p-[30px] h-[20%] flex flex-col justify-center'>
+                            <span className='text-white text-[24pt] font-sora font-extrabold'>2</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="dashboard" className='mt-[100px]'>
                 <h1 className='text-[20pt] font-sora font-semibold'>Dashboard</h1>
                 <div className='flex flex-col xl:flex-row gap-[20px] mt-[20px]'>
                     <table id='tabelaPontos' className='grow-[2]'>
@@ -18,67 +41,67 @@ function Home() {
                             </tr>
                             <tr>
                                 <td>0º</td>
-                                <td>Terceiro Desenvolvimento de Sistemas</td>
+                                <td>3º Desenvolvimento de Sistemas</td>
                                 <td>0 pontos</td>
                             </tr>
                             <tr>
                                 <td>0º</td>
-                                <td>Terceiro Desenvolvimento de Sistemas</td>
+                                <td>3º Desenvolvimento de Sistemas</td>
                                 <td>0 pontos</td>
                             </tr>
                             <tr>
                                 <td>0º</td>
-                                <td>Terceiro Desenvolvimento de Sistemas</td>
+                                <td>3º Desenvolvimento de Sistemas</td>
                                 <td>0 pontos</td>
                             </tr>
                             <tr>
                                 <td>0º</td>
-                                <td>Terceiro Desenvolvimento de Sistemas</td>
+                                <td>3º Desenvolvimento de Sistemas</td>
                                 <td>0 pontos</td>
                             </tr>
                             <tr>
                                 <td>0º</td>
-                                <td>Terceiro Desenvolvimento de Sistemas</td>
+                                <td>3º Desenvolvimento de Sistemas</td>
                                 <td>0 pontos</td>
                             </tr>
                             <tr>
                                 <td>0º</td>
-                                <td>Terceiro Desenvolvimento de Sistemas</td>
+                                <td>3º Desenvolvimento de Sistemas</td>
                                 <td>0 pontos</td>
                             </tr>
                             <tr>
                                 <td>0º</td>
-                                <td>Terceiro Desenvolvimento de Sistemas</td>
+                                <td>3º Desenvolvimento de Sistemas</td>
                                 <td>0 pontos</td>
                             </tr>
                             <tr>
                                 <td>0º</td>
-                                <td>Terceiro Desenvolvimento de Sistemas</td>
+                                <td>3º Desenvolvimento de Sistemas</td>
                                 <td>0 pontos</td>
                             </tr>
                             <tr>
                                 <td>0º</td>
-                                <td>Terceiro Desenvolvimento de Sistemas</td>
+                                <td>3º Desenvolvimento de Sistemas</td>
                                 <td>0 pontos</td>
                             </tr>
                             <tr>
                                 <td>0º</td>
-                                <td>Terceiro Desenvolvimento de Sistemas</td>
+                                <td>3º Desenvolvimento de Sistemas</td>
                                 <td>0 pontos</td>
                             </tr>
                             <tr>
                                 <td>0º</td>
-                                <td>Terceiro Desenvolvimento de Sistemas</td>
+                                <td>3º Desenvolvimento de Sistemas</td>
                                 <td>0 pontos</td>
                             </tr>
                             <tr>
                                 <td>0º</td>
-                                <td>Terceiro Desenvolvimento de Sistemas</td>
+                                <td>3º Desenvolvimento de Sistemas</td>
                                 <td>0 pontos</td>
                             </tr>
                             <tr>
                                 <td>0º</td>
-                                <td>Terceiro Desenvolvimento de Sistemas</td>
+                                <td>3º Desenvolvimento de Sistemas</td>
                                 <td>0 pontos</td>
                             </tr>
                         </tbody>
