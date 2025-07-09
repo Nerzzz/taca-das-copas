@@ -5,12 +5,12 @@ function Home() {
     var salas = 0
 
     return (
-        <main className='px-[40px] my-[40px]'>
+        <main className='px-[10px] md:px-[40px] my-[40px]'>
             <section id="dashboard">
                 <h1 className='text-[20pt] font-sora font-semibold'>Dashboard</h1>
-                <div className='flex gap-[20px] mt-[20px]'>
+                <div className='flex flex-col xl:flex-row gap-[20px] mt-[20px]'>
                     <table id='tabelaPontos' className='grow-[2]'>
-                        <tr class='table_header'>
+                        <tr className='table_header'>
                             <th>Posição</th>
                             <th>Turmas competindo</th>
                             <th>Pontuação</th>
@@ -81,8 +81,8 @@ function Home() {
                             <td>0 pontos</td>
                         </tr>
                     </table>
-                    <div className='flex flex-col grow-[0.5] w-[20%] gap-[20px]'>
-                        <div className='bg-white rounded-[10px] h-fit p-[25px] flex flex-col gap-[25px] border-light-gray border-[1px]'>
+                    <div className='flex flex-col md:flex-row xl:flex-col grow-[0.5] xl:w-[20%] gap-[20px] w-auto'>
+                        <div className='bg-white rounded-[10px] justify-center p-[25px] flex flex-col gap-[25px] border-light-gray border-[1px] w-[100%] xl:h-fit'>
                             <div>
                                 <h1 className='text-gray-400 font-sora text-[10pt] font-light'>Número de Salas</h1>
                                 <p className='font-roboto text-[18pt]'>{salas}</p>
@@ -92,10 +92,10 @@ function Home() {
                                 <p className='font-roboto text-[18pt]'>{pontos} pontos</p>
                             </div>
                         </div>
-                        <div className='bg-linear-to-r from-orange-10 to-orange-20 rounded-[10px] h-[100%] p-[25px] flex flex-col gap-[10px] border-light-gray border-[1px] justify-center items-center text-white'>
+                        <div className='bg-linear-to-r from-orange-10 to-orange-20 rounded-[10px] xl:h-[100%] p-[25px] flex flex-col gap-[10px] border-light-gray border-[1px] justify-center items-center text-white'>
                             <h1 className='font-sora text-[15pt] font-[600]'>Como funciona a pontuação?</h1>
                             <p className='font-roboto text-[12pt]'>Clique no botão abaixo para entender</p>
-                            <a href="" className='bg-white text-black py-[12px] px-[20px] mt-[20px] rounded-full font-sora font-[600] text-[12pt]'>Sistema de Pontos</a>
+                            <a href="" className='bg-white text-black py-[12px] px-[20px] mt-[20px] text-center rounded-full font-sora font-[600] text-[12pt]'>Sistema de Pontos</a>
                         </div>
                     </div>
                 </div>
