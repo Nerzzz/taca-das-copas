@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap');
+
+@theme{
+  --font-sora: "Sora";
+  --font-roboto: "Roboto";
+  --color-light-gray: #eaeaea;
+  --color-white: #fafafa;
+
+  --color-orange-10: #ffae1a;
+  --color-orange-20: #dd7447;
+  --color-orange-30: #dd5c00;
+}
