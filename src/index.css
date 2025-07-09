@@ -1,0 +1,21 @@
+#tabelaPontos{
+    border-collapse: collapse;
+    height: fit-content;
+}
+#tabelaPontos th{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    color: #fafafa;
+    font-family: "sora";
+}
+#tabelaPontos td{
+    font-family: "Roboto";
+}
+#tabelaPontos td, #tabelaPontos th{
+    border: 1px solid #eaeaea;
+    padding: 8px;
+}
+#tabelaPontos .table_header{
+    background-image: linear-gradient(to right, #dd7447, #ffae1a, #dd7447);
+}

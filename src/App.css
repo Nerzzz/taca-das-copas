@@ -5,10 +5,10 @@
 @theme{
   --font-sora: "Sora";
   --font-roboto: "Roboto";
-  --color-light-gray: #eaeaea;
+  --color-light-gray: #e9e9e9;
   --color-white: #fafafa;
 
-  --color-orange-10: #ffae1a;
+  --color-orange-10: #fca439;
   --color-orange-20: #dd7447;
   --color-orange-30: #dd5c00;
 }
