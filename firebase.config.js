@@ -2,14 +2,14 @@ import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDc9eZJLNXVn2fPtNKBa5vbqnbHhqU4i94",
-  authDomain: "tacadascopas.firebaseapp.com",
-  databaseURL: "https://tacadascopas-default-rtdb.firebaseio.com",
-  projectId: "tacadascopas",
-  storageBucket: "tacadascopas.firebasestorage.app",
-  messagingSenderId: "994866362078",
-  appId: "1:994866362078:web:f0a3fa30b61b9502ad344f",
-  measurementId: "G-0RPKBNN12N"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  databaseURL: import.meta.env.VITE_FIREBASE_DATA_BASE_URL,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASURIMENT_ID
 };
 
 const app = initializeApp(firebaseConfig);
