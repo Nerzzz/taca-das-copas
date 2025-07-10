@@ -1,5 +1,5 @@
 import React from 'react'
-import { Route, Routes, HashRouter, useLocation } from 'react-router'
+import { Route, Routes, BrowserRouter, useLocation } from 'react-router'
 import './App.css'
 
 import Header from './assets/components/Header'
@@ -33,9 +33,9 @@ function AppContent() {
 
 function App() {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <AppContent />
-    </HashRouter>
+    </BrowserRouter>
   )
 }
 
