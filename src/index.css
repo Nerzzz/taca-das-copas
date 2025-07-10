@@ -11,6 +11,7 @@
 }
 #tabelaPontos td{
     font-family: "Roboto";
+    background-color: #fafafa;
 }
 #tabelaPontos td, #tabelaPontos th{
     border: 1px solid #eaeaea;
