@@ -1,7 +1,6 @@
 @import "tailwindcss";
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap');
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
 
 @theme{
   --font-sora: "Sora";
@@ -12,4 +11,12 @@
   --color-orange-10: #fca439;
   --color-orange-20: #dd7447;
   --color-orange-30: #dd5c00;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+.shadow{
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
