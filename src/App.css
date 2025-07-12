@@ -18,3 +18,10 @@
 .shadow{
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
+
+.text_grad{
+  background: -webkit-linear-gradient(360deg,#fca439, #dd7447, #dd5c00);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
