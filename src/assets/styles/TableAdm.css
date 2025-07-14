@@ -1,0 +1,22 @@
+table{
+    border-collapse: collapse;
+    height: fit-content;
+}
+table th{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    color: #fafafa;
+    font-family: "sora";
+}
+table td{
+    font-family: "Roboto";
+    background-color: #fafafa;
+}
+table td, table th{
+    border: 1px solid #eaeaea;
+    padding: 8px;
+}
+table .table_header{
+    background-image: linear-gradient(to right, #dd7447, #ffae1a, #dd7447);
+}
