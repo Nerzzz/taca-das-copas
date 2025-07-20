@@ -12,7 +12,6 @@ function Admin() {
 
   async function cadastrarSala(e) {
     e.preventDefault();
-
     if(turma == '' || abrv == ''){
       alert("Campos devem ser preenchidos")
       return

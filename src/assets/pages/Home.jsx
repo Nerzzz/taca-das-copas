@@ -19,7 +19,7 @@ function Home() {
                         <div className='shadow bg-linear-to-r from-orange-10 to-orange-20 rounded-[10px] xl:h-[100%] p-[25px] flex flex-col gap-[10px] border-light-gray border-[1px] justify-center items-center text-white'>
                             <h1 className='font-sora text-[15pt] font-[600]'>Como funciona a pontuação?</h1>
                             <p className='font-roboto text-[12pt]'>Clique no botão abaixo para entender</p>
-                            <a href="" className='bg-white text-black py-[12px] px-[20px] mt-[20px] text-center rounded-full font-sora font-[600] text-[12pt]'>Sistema de Pontos</a>
+                            <a onClick={() => alert("W.I.P")} className='cursor-pointer bg-white text-black py-[12px] px-[20px] mt-[20px] text-center rounded-full font-sora font-[600] text-[12pt]'>Sistema de Pontos</a>
                         </div>
                     </div>
                 </div>

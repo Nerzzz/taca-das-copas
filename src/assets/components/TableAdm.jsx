@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 
-import { collection, getDocs } from 'firebase/firestore'
+import { collection, getDocs, doc, deleteDoc } from 'firebase/firestore'
 import { db } from '../../firebase.config'
 
 import FormEdit from './FormEdit'
@@ -19,6 +19,7 @@ function TableAdm() {
         }));
 
         // Ordenar por número no início da turma (ex: "3º Desenvolvimento de Sistemas")
+
         listaSalas.sort((a, b) => {
             const numeroA = parseInt(a.turma)
             const numeroB = parseInt(b.turma)
@@ -28,9 +29,25 @@ function TableAdm() {
         setSalas(listaSalas)
     }
 
+    async function deletarSala(id) {
+        const refDoc = doc(db, "salas", id);
+        try {
+            await deleteDoc(refDoc);
+            alert("Sala deletada com sucesso!");
+            carregarSalas();
+        } catch (error) {
+            console.error("Erro ao deletar sala:", error);
+            alert("Erro ao deletar sala!");
+        }
+    }
+
     useEffect(() => {
         carregarSalas()
     }, [])
+
+    useEffect(() => {
+        carregarSalas();
+    }, [salaSelecionada]);
 
     return (
         <>
@@ -41,6 +58,7 @@ function TableAdm() {
             <table className='mt-[10px]'>
                 <tbody>
                     <tr className='table_header'>
+                        <th>ID</th>
                         <th>Turma</th>
                         <th>Pontos</th>
                         <th>Editar</th>
@@ -48,14 +66,16 @@ function TableAdm() {
 
                     {salas.map((sala) => (
                         <tr key={sala.id}>
+                            <td>{sala.id}</td>
                             <td>{sala.turma}</td>
                             <td>{sala.pontos}</td>
                             <td className='flex md:flex-row flex-col md:justify-evenly gap-[30px] items-center'>
                                 <button
-                                    className='bi-pencil-fill text-[16pt] text-blue-400'
+                                    className='cursor-pointer bi-pencil-fill text-[16pt] text-blue-400'
                                     onClick={() => setSalaSelecionada(sala)}
+                                    title='Modificar'
                                 />
-                                <button className='bi-trash-fill cursor-pointer text-[16pt] text-red-500'/>
+                                <button className='bi-trash-fill cursor-pointer text-[16pt] text-red-500' onClick={() => deletarSala(sala.id)}/>
                             </td>
                         </tr>
                     ))}
