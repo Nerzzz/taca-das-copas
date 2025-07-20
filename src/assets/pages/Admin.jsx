@@ -23,7 +23,6 @@ function Admin() {
         turma: turma,
         abrv: abrv,
         pontos: 0,
-        podio: 0
       })
       alert("Sala cadastrada com sucesso!")
 

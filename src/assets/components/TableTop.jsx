@@ -6,6 +6,7 @@ import { db } from '../../firebase.config'
 function TableTop() {
 
     const [salas, setSalas] = useState([])
+    let pos = 1
     
     async function carregarSalas() {
         const querySnapshot = await getDocs(collection(db, "salas"))
@@ -13,6 +14,13 @@ function TableTop() {
             id: doc.id,
             ...doc.data()
         }))
+
+        listaSalas.sort((a, b) => {
+            const numeroA = parseInt(a.pontos)
+            const numeroB = parseInt(b.pontos)
+            return numeroB - numeroA
+        });
+
         setSalas(listaSalas)
     }
 
@@ -30,7 +38,7 @@ function TableTop() {
                 </tr>
                 {salas.map((sala) => (
                     <tr key={sala.id}>
-                        <td>{sala.podio}º</td>
+                        <td>{pos++}º</td>
                         <td>{sala.turma}</td>
                         <td>{sala.pontos}</td>
                     </tr>

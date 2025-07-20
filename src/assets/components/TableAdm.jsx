@@ -1,13 +1,15 @@
 import { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
 
 import { collection, getDocs } from 'firebase/firestore'
 import { db } from '../../firebase.config'
+
+import FormEdit from './FormEdit'
 
 import "../styles/TableAdm.css"
 
 function TableAdm() {
     const [salas, setSalas] = useState([])
+    const [salaSelecionada, setSalaSelecionada] = useState(null)
 
     async function carregarSalas() {
         const querySnapshot = await getDocs(collection(db, "salas"));
@@ -49,9 +51,9 @@ function TableAdm() {
                             <td>{sala.turma}</td>
                             <td>{sala.pontos}</td>
                             <td className='flex md:flex-row flex-col md:justify-evenly gap-[30px] items-center'>
-                                <Link
+                                <button
                                     className='bi-pencil-fill text-[16pt] text-blue-400'
-                                    to={`/editar/${sala.id}`}
+                                    onClick={() => setSalaSelecionada(sala)}
                                 />
                                 <button className='bi-trash-fill cursor-pointer text-[16pt] text-red-500'/>
                             </td>
@@ -59,6 +61,12 @@ function TableAdm() {
                     ))}
                 </tbody>
             </table>
+            {salaSelecionada && (
+                <FormEdit
+                    sala={salaSelecionada}
+                    onClose={() => setSalaSelecionada(null)}
+                />
+            )}
         </>
     )
 }
