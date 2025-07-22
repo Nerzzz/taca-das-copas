@@ -9,9 +9,7 @@ function FormEdit({sala, onClose}) {
     const [abrv, setAbrv] = useState('')
     const [pontos, setPontos] = useState(0)
 
-    const [metodo, setMetodo] = useState('');
-
-    let nPontos = 0;
+    const [metodo, setMetodo] = useState('')
 
     useEffect(() => {
         if (sala) {
@@ -22,25 +20,30 @@ function FormEdit({sala, onClose}) {
 
     function handleSubmit(e) {
         e.preventDefault()
-        if(turma == '' || abrv == ''){
+
+        if (turma.trim() === '' || abrv.trim() === '') {
             alert("Valores não devem estar vazios!")
             return
         }
 
-        if (metodo === 'add' || metodo === 'sub') {
-            const novoPonto = parseInt(pontos)
+        let novaPontuacao = sala.pontos
 
-            if(novoPonto <= 0){
-                alert("Insira um número maior que 0!")
+        const input = parseInt(pontos)
+        
+        if (!isNaN(input) && input > 0) {
+            if (metodo !== 'add' && metodo !== 'sub') {
+                alert("Escolha um método!")
                 return
             }
 
-            nPontos = metodo === 'add' ? sala.pontos + novoPonto : sala.pontos - novoPonto;
-        }
-
-        atualizarPontuacao(sala.id, nPontos)
-        onClose()
+        novaPontuacao = metodo === 'add' 
+            ? sala.pontos + input 
+            : sala.pontos - input
     }
+
+    atualizarPontuacao(sala.id, novaPontuacao)
+    onClose()
+}
 
     async function atualizarPontuacao(id, novaPontuacao) {
         const refDoc = doc(db, "salas", id);
@@ -87,7 +90,6 @@ function FormEdit({sala, onClose}) {
                         <input
                             type="number"
                             placeholder="Quantidade de Pontos"
-                            value={pontos}
                             onChange={e => setPontos(e.target.value)}
                             className='py-[5px] px-[10px] bg-gray-100 font-poppins text-[12pt] outline-none focus:border-orange-10 border-[1px] border-gray-300 rounded-[5px] mt-[30px]'
                         />

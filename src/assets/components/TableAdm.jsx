@@ -33,7 +33,7 @@ function TableAdm() {
         const refDoc = doc(db, "salas", id);
         try {
             await deleteDoc(refDoc);
-            alert("Sala deletada com sucesso!");
+            alert("Sala (ID: "+id+") deletada com sucesso!");
             carregarSalas();
         } catch (error) {
             console.error("Erro ao deletar sala:", error);
@@ -51,11 +51,11 @@ function TableAdm() {
 
     return (
         <>
-            <button className='w-fit flex gap-[5px] font-sora font-[500] items-center cursor-pointer underline' onClick={carregarSalas}>
+            <button className='absolute w-fit flex gap-[5px] font-sora font-[500] items-center cursor-pointer underline' onClick={carregarSalas}>
                 <i className="bi-arrow-clockwise text-[15pt]"/>
                 <span>Recarregar</span> 
             </button>
-            <table className='mt-[10px]'>
+            <table className='mt-[40px]'>
                 <tbody>
                     <tr className='table_header'>
                         <th>ID</th>

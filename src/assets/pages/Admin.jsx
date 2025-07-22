@@ -34,11 +34,12 @@ function Admin() {
   }
 
   return (
-    <section>
-      <main className='px-[40px] mt-[40px]'>
+      <main className='px-[10px] md:px-[40px] my-[40px]'>
         <section className='flex flex-col'>
           <h1 className='text-[20pt] font-sora font-semibold mb-[40px]'>Turmas cadastradas</h1>
-          <TableAdm />
+          <div className='flex flex-col md:overflow-hidden overflow-scroll'>
+            <TableAdm />
+          </div>
         </section>
         <section className='mt-[80px] flex flex-col gap-[20px]'>
           <h1 className='text-[20pt] font-sora font-semibold'>Cadastrar uma nova turma</h1>
@@ -61,7 +62,6 @@ function Admin() {
           </form>
         </section>
       </main>
-    </section>
   )
 }
 
