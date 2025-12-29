@@ -11,3 +11,6 @@ Os usuários podem acessar o sistema livremente, nele há um pódio, mostrando u
 A seção de administação só pode ser acessada pelo lider do grêmio, o desenvolvedor e a direção escolar.
 
 [Link de acesso](https://tacadascopas.vercel.app/)
+
+### Notas
+Durante o desenvolvimento desse simples sistema, pude aprender diversas tecnologias interessantes, como o React e TailwindCSS. Aprendi também a utilizar sistemas de login de terceiros, como o Firebase, que serviu para a autenticação de uma conta de administrador e para armazenar os dados.
